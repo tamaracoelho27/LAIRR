@@ -1,0 +1,92 @@
+body {
+    background-image: url("mainbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#LAIRRLOGO h1 {
+    font-size: clamp(2.5rem, 5vw, 60px);
+    font-family: "Orbitron", serif;
+    color: white;
+    padding-right: clamp(0px, 80vw, 1100px); /* ← final corrected value */
+    margin-top: clamp(30px, 5vh, 50px);
+}
+
+#main-container {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 3vw;
+    padding: clamp(60px, 8vh, 120px) clamp(40px, 6vw, 100px);
+    width: 80%;
+    max-width: 1200px; /* Add 'px' to make this valid */
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 0;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main-container h1 {
+    font-family: "Basic", sans-serif;
+    font-size: clamp(2.5rem, 5vw, 60px);
+    margin: 0;
+    color: transparent;
+    background-image: url(buttonbg.png);
+    background-size: cover;
+    background-position: right;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#main-container h3 {
+    color: gray;
+    font-family: "Encode Sans", sans-serif;
+    font-weight: 575;
+    margin-top: clamp(40px, 6vh, 75px);
+    font-size: clamp(18px, 2vw, 25px);
+}
+
+#main-container p {
+    color: gray;
+    font-family: "Encode Sans", sans-serif;
+    font-weight: 550;
+    margin-top: clamp(30px, 5vh, 55px);
+    margin-bottom: clamp(30px, 5vh, 40px);
+    font-size: clamp(12px, 1.2vw, 15px);
+}
+
+#back-container {
+    position: fixed;
+    bottom: clamp(30px, 5vh, 50px);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#back {
+    width: clamp(20px, 3vw, 30px);
+    height: clamp(30px, 6vh, 50px);
+}
+
+#back:hover {
+    transform: scale(1.1);
+}
+
+#back img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
