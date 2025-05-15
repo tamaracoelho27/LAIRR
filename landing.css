@@ -1,4 +1,3 @@
-
 body {
     background-image: url("mainbg.png");
     background-size: cover;
@@ -12,43 +11,46 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-    
 }
 
-#LAIRRLOGO h1{
-    font-size: 60px;
+#LAIRRLOGO h1 {
+    font-size: clamp(2.5rem, 5vw, 60px);
     font-family: "Orbitron", serif;
     color: white;
-    padding-right: 1100px;
-    margin-top: 50px;
-
+    padding-right: clamp(0px, 80vw, 1100px); 
+    margin-top: clamp(30px, 5vh, 50px);
 }
 
 #main-container {
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-radius: 50px;
-    padding: 120px 100px;
+    border-radius: 3vw;
+    padding: clamp(60px, 8vw, 120px) clamp(40px, 6vw, 100px);
     width: 80%;
-    max-width: 1200;
+    max-width: 1200px; 
     border: 1px solid black;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    margin-top: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 0;
+    
+    min-height: 23vh; 
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: clamp(20px, 4vw, 40px);
 }
 
 #main-container h3 {
     font-family: "Basic", sans-serif;
-    font-size: 60px;
+    font-size: clamp(2rem, 4vw, 60px);
     margin: 0;
-
     color: transparent;
     background-image: url(buttonbg.png);
     background-size: cover;
@@ -66,9 +68,9 @@ body {
 }
 
 .chat-button {
-    font-size: 17px;
+    font-size: clamp(14px, 1.5vw, 17px);
     border-radius: 300px;
-    padding: 20px 70px;
+    padding: clamp(15px, 3vh, 20px) clamp(40px, 7vw, 70px);
     background-image: url("buttonbg.png");
     background-size: cover;
     background-position: center;
@@ -77,22 +79,20 @@ body {
     white-space: nowrap;
     color: white;
     font-family: "Basic", sans-serif;
-
 }
 
 #secondary-container {
     position: fixed;
-    bottom: 80px;
+    bottom: clamp(40px, 8vh, 80px);
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 90px;
-    padding: 40px 40px;
+    padding: clamp(20px, 5vw, 40px);
     width: 60%;
     max-width: 1000px;
-    
 }
 
 #navbar {
@@ -106,23 +106,31 @@ body {
     display: flex;
     justify-content: left;
     flex: 1;
-    gap: 70px;
-    margin-left: 30px;
+    gap: clamp(30px, 6vw, 70px);
+    margin-left: clamp(15px, 3vw, 30px);
 }
 
-.nav-links a{
+.nav-links a {
     color: white;
-    font-size: large;
+    font-size: clamp(14px, 1.5vw, 18px);
     text-decoration: none;
+    font-family: "Basic", sans-serif;
+    font-weight: 400;
 }
 
 #light {
     margin-left: auto;
-    margin-right: 30px;
+    margin-right: clamp(15px, 3vw, 30px);
 }
 
 #light img {
-    width: 24px;
-    height: 24px;
+    width: clamp(16px, 2vw, 24px);
+    height: clamp(16px, 2vw, 24px);
+}
 
+
+@media (max-width: 1200px) {
+    #LAIRRLOGO h1 {
+        padding-right: 5vw; 
+    }
 }
