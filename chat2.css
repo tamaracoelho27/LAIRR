@@ -1,0 +1,91 @@
+body{
+    background-image: url("mainbg.png");
+    height:150vh;
+}
+
+h1{
+    color:white;
+    font-family: "Orbitron", serif;
+    font-size:normal;
+    margin-left: 5%;
+}
+
+.hijab{
+    display:flex;
+    height:65%;
+    width:32%;
+    margin-left: 10%;
+    background-image: url("hijab.png");
+}
+.body{
+    background-image: url("mainbg.png");
+    height:150vh;
+}
+
+h1{
+    color:white;
+    font-family: "Orbitron", serif;
+    font-size:normal;
+    margin-left: 5%;
+}
+
+.hijab{
+    display:flex;
+    height:65%;
+    width:32%;
+    margin-left: 10%;
+    background-image: url("hijab.png")
+}
+.chat {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    width: 500px;
+    height: 500px;
+    background-color: rgba(3, 3, 58, 0.521);
+    margin-top: -45%;
+    margin-left: 55%;
+    border-radius: 40px;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.message {
+    width: 400px;
+    height:50px; 
+    border-radius: 20px;
+    margin-top: 80%;
+    margin-left:3%;
+    background-color:rgba(3, 3, 46, 0.936);
+    border-width: 0px;
+    padding:15px;
+    font-size: 1rem;
+}
+
+#button {
+    position: absolute;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    right: 120px; 
+    top: 90%; 
+    transform: translateY(-50%);
+    background-image: url("button.png");
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#button i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("button.png");
+}
+
+#button:hover {
+    background-color: rgba(82, 24, 175, 0.7);
+    box-shadow: 0 0 10px rgba(82, 24, 175, 0.7);
+}
+
+
