@@ -82,10 +82,9 @@ body {
 }
 
 #secondary-container {
-    position: fixed;
-    bottom: clamp(40px, 8vh, 80px);
-    left: 50%;
-    transform: translateX(-50%);
+    margin-left: clamp(100px, 10vw, 200px);
+    margin-right: 50px;
+    margin-top: 30px;
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
